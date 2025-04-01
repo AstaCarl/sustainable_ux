@@ -15,8 +15,49 @@ svg {
     height: fit-content;
 }
 
-button {
+.blob-card-1 {
+    background-image: url('./assets/blob-haikei(1).svg'); /* Corrected path */
+    width: 300px; /* Set a fixed width for the card */
+    height: 200px; /* Set a fixed height for the card */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+}
 
+.blob-card-2 {
+    background-image: url('./assets/blob-haikei(2).svg'); /* Corrected path */
+    width: 300px; /* Set a fixed width for the card */
+    height: 200px; /* Set a fixed height for the card */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    padding: 20px;
+}
+
+.blob-card-3 {
+    background-image: url('./assets/blob-haikei(4).svg'); /* Corrected path */
+    width: 300px; /* Set a fixed width for the card */
+    height: 200px; /* Set a fixed height for the card */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+
+}
+
+.card-link {
+    text-decoration: none;
+    color: white; /* Adjust text color for contrast */
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 header{
