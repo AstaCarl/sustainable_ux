@@ -161,12 +161,6 @@ body {
   background-color: #ddd3c6;
 }
 
-h1 {
-  color: var(--color-brown);
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
-}
 
 h1 {
   color: var(--color-brown);
