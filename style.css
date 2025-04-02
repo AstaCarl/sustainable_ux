@@ -1,88 +1,139 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-body{
-    background-color: #ddd3c6;
+:root {
+  --color-beige: #ddd3c6;
+  --color-light-brown: #7b5226;
+  --color-brown: #4b3118;
+  --color-dark-brown: #211404;
+  --color-green: #4c956c;
 }
 
-div {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #ddd3c6;
+}
+
+h2 {
+  color: var(--color-brown);
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background-color: var(--color-green);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+ul {
+  display: flex;
+    flex-direction: column;
+  gap: 0.8rem;
+}
+
+li{
     display: flex;
-    /* gap: 10px */
+    align-items: center;
+    gap: 1rem;
+}
+
+h3 {
+  color: var(--color-dark-brown);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 100%;
+}
+
+.quote-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-brown);
+  padding-bottom: 4rem;
+  margin-bottom: -1px;
+  margin-top: -1px;
+}
+
+.quote {
+  color: var(--color-beige);
+  font-size: 1.7rem;
+  font-weight: 500;
+  max-width: 600px;
+  width: 80%;
+}
+
+.farmer-section {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.plant-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.svg-container {
     width: 100%;
 }
-svg {
-    width: fit-content;
-    height: fit-content;
+
+.svg-container svg {
+  width: 100%;
+  height: auto;
 }
 
-.card-section{
+.consumer-choices {
+    background-color: var(--color-brown);
+    margin-top: -5px;
+    padding: 4rem 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.blob-card-1 {
-    background-image: url('./assets/blob-haikei(5).svg'); /* Corrected path */
-    width: 700px; /* Set a fixed width for the card */
-    height: 400px; /* Set a fixed height for the card */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center; /* Center the text vertically */
-    justify-content: center; /* Center the text horizontally */
-    cursor: pointer;
+.consumer-choices h2, .consumer-choices h3, .consumer-choices p {
+  color: var(--color-beige);
 }
 
-.blob-card-2 {
-    background-image: url('./assets/blob-haikei(6).svg'); /* Corrected path */
-    width: 700px; /* Set a fixed width for the card */
-    height: 400px; /* Set a fixed height for the card */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center; /* Center the text vertically */
-    justify-content: center; /* Center the text horizontally */
-    cursor: pointer;
+.consumer-choices a {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.blob-card-3 {
-    background-image: url('./assets/blob-haikei(7).svg'); /* Corrected path */
-    width: 700px; /* Set a fixed width for the card */
-    height: 400px; /* Set a fixed height for the card */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center; /* Center the text vertically */
-    justify-content: center; /* Center the text horizontally */
-    cursor: pointer;
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/layered-waves-haikei.svg");
+  background-size: cover;
+  background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
+  background-position: center; /* Optional: Centers the image */
 }
 
-.card-link {
-    text-decoration: none;
-    color: #ddd3c6; /* Adjust text color for contrast */
-    font-size: 1.5rem;
-    font-weight: bold;
+@media (min-width: 400px) {
+  .card-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
-
-header{
-    width: 100vw;
-    height: 100vh;
-    background-image: url('./assets/wave-haikei.svg');
-    background-size: cover;
-    background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
-    background-position: center; /* Optional: Centers the image */
-}
-
-@media (max-width: 400px) {
-
-    body{
-        background-color: red;
-    }
-}
-
