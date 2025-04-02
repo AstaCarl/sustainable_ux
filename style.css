@@ -161,6 +161,20 @@ body {
   background-color: #ddd3c6;
 }
 
+h1 {
+  color: var(--color-brown);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+h1 {
+  color: var(--color-brown);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 500;
@@ -172,6 +186,12 @@ h2 {
 }
 
 h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+h3 {
+  color: var(--color-dark-brown);
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -222,9 +242,8 @@ li {
   justify-content: center;
   align-items: center;
   background-color: var(--color-dark-brown);
-  padding-bottom: 4rem;
   margin-bottom: -1px;
-  margin-top: -1px;
+  margin-top: -1rem;
 }
 
 .quote {
@@ -234,7 +253,6 @@ li {
   max-width: 600px;
   width: 80%;
 }
-
 
 .farmer-section {
   display: flex;
@@ -258,6 +276,7 @@ li {
 .svg-container svg {
   width: 100%;
   height: auto;
+  margin: 0;
 }
 
 .consumer-choices {
@@ -373,59 +392,6 @@ input[type="checkbox"]:checked::after {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-header {
-  width: 100vw;
-  height: auto;
-  background-image: url("./assets/layered-waves-haikei.svg");
-  background-size: cover;
-  background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
-  background-position: center; /* Optional: Centers the image */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 0 1rem 0 1rem;
-}
-
-.header-top-spacer {
-  height: 5rem;
-  background-color: var(--color-beige);
-}
-.header-bottom-spacer {
-  height: 1rem;
-  background-color: var(--color-beige);
-}
-
-header svg {
-  margin-top: 2rem;
-}
-
-header p {
-  color: var(--color-beige);
-}
-
-footer {
-  margin-top: -6px;
-  background-color: var(--color-dark-brown);
-  color: var(--color-beige);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 0 1rem;
-}
-
-footer ul{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-footer li{
-  color: var(--color-beige);
-}
-
 
 @media (min-width: 400px) {
   .card-section {
