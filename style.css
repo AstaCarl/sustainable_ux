@@ -225,11 +225,12 @@ li {
   font-size: 1.2rem;
   font-weight: 500;
   gap: 0.2rem;
+  font-family: 'Display';
 }
 
 header {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   background-size: cover;
   background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
   background-position: center; /* Optional: Centers the image */
@@ -246,6 +247,13 @@ header h2 {
 
 header svg {
   margin-top: 3rem;
+}
+
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
 }
 
 .button-container {
@@ -269,9 +277,6 @@ header svg {
 .quote {
   color: var(--color-beige);
   font-size: 2rem;
-  font-weight: 500;
-  max-width: 600px;
-  width: 80%;
 }
 
 .farmer-section {
@@ -412,6 +417,14 @@ input[type="checkbox"]:checked::after {
   transform: translate(-50%, -50%);
 }
 
+.button-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 footer {
   margin-top: -6px;
   background-color: var(--color-dark-brown);
@@ -420,8 +433,49 @@ footer {
 }
 
 @media (min-width: 400px) {
-  .card-section {
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
+
+
+@media (min-width: 600px) {
+.padding {
+  padding: 0 4rem;
+}
+
+.cta-section{
+  align-items: center;
+}
+
+.mobile {
+  display: none;
+}
+.desktop {
+  display: block;
+}
+
+form {
+  width: 70%;
+}
+
+.quote {
+  padding-top: 4rem;
+  width: 80%;
+}
+}
+
+@media (min-width: 1000px) {
+  .padding {
+    padding: 0 8rem;
+  }
+
+  form {
+    width: 50%;
+  }
+  .quote {
+    font-size: 3rem;
+  }
+
+  li{
+    font-size: 1.5rem;
+  }
+  
+  }
