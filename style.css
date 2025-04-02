@@ -233,7 +233,7 @@ header {
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 header h2 {
@@ -241,7 +241,7 @@ header h2 {
 }
 
 header svg {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .button-container {
