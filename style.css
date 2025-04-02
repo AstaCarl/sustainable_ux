@@ -152,13 +152,17 @@ table {
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: #ddd3c6;
 }
+
+.padding {
+  padding: 0 2rem;
+}
+
 
 h1 {
   color: var(--color-brown);
@@ -252,7 +256,8 @@ header svg {
 }
 
 .quote-section {
-  padding-top: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,7 +268,7 @@ header svg {
 
 .quote {
   color: var(--color-beige);
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 500;
   max-width: 600px;
   width: 80%;
@@ -276,13 +281,6 @@ header svg {
   gap: 2rem;
 }
 
-.plant-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
 .svg-container {
   width: 100%;
   margin-top: -1px;
@@ -292,6 +290,10 @@ header svg {
   width: 100%;
   height: auto;
   margin: 0;
+}
+
+.display {
+  font-size: 2.5rem;
 }
 
 .consumer-choices {
@@ -341,7 +343,8 @@ header svg {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding: 6rem 2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 form {
@@ -407,6 +410,13 @@ input[type="checkbox"]:checked::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+footer {
+  margin-top: -6px;
+  background-color: var(--color-dark-brown);
+  color: var(--color-beige);
+  height: 100px;
 }
 
 @media (min-width: 400px) {
