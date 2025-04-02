@@ -133,7 +133,6 @@ table {
 /* Css Reset end here */
 /* ////////////////////////////////////////// */
 
-
 :root {
   --color-beige: #ddd3c6;
   --color-light-brown: #7b5226;
@@ -152,6 +151,13 @@ body {
   background-color: #ddd3c6;
 }
 
+h1 {
+  color: var(--color-brown);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 h2 {
   color: var(--color-dark-brown);
   font-size: 1.5rem;
@@ -159,6 +165,12 @@ h2 {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+h3 {
+  color: var(--color-dark-brown);
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 p {
@@ -192,11 +204,6 @@ li {
   gap: 0.2rem;
 }
 
-h3 {
-  color: var(--color-dark-brown);
-  font-size: 1.2rem;
-  font-weight: 400;
-}
 .button-container {
   display: flex;
   justify-content: center;
@@ -209,9 +216,8 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: var(--color-dark-brown);
-  padding-bottom: 4rem;
   margin-bottom: -1px;
-  margin-top: -1px;
+  margin-top: -1rem;
 }
 
 .quote {
@@ -220,6 +226,43 @@ h3 {
   font-weight: 500;
   max-width: 600px;
   width: 80%;
+  padding-bottom: 1rem;
+}
+
+header {
+  padding-top: 1rem;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
+  background-position: center; /* Optional: Centers the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
+
+header h2 {
+  padding: 1rem;
+}
+
+header svg {
+  margin-top: 2rem;
+}
+
+.soil-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 6rem 0.5rem 3rem 0;
+  color: var(--color-beige);
+  /* background-image: url("./assets/layered-waves-cropped.svg"); */
+  background-size: cover;
+  background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
+  background-position: center; /* Optional: Centers the image */
 }
 
 .farmer-section {
@@ -238,11 +281,13 @@ h3 {
 
 .svg-container {
   width: 100%;
+  margin: 0;
 }
 
 .svg-container svg {
   width: 100%;
   height: auto;
+  margin: 0;
 }
 
 .consumer-choices {
@@ -263,38 +308,6 @@ h3 {
 .consumer-choices a {
   font-size: 1.5rem;
   font-weight: 500;
-}
-
-header {
-  width: 100vw;
-  height: auto;
-  background-image: url("./assets/layered-waves-haikei.svg");
-  background-size: cover;
-  background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
-  background-position: center; /* Optional: Centers the image */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 0 1rem 0 1rem;
-}
-
-.header-top-spacer {
-  height: 5rem;
-  background-color: var(--color-beige);
-}
-.header-bottom-spacer {
-  height: 1rem;
-  background-color: var(--color-beige);
-}
-
-header svg {
-  margin-top: 2rem;
-}
-
-header p {
-  color: var(--color-beige);
 }
 
 @media (min-width: 400px) {
