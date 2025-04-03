@@ -244,6 +244,95 @@ nav a {
   font-family: 'Display';
 }
 
+.countdown {
+  font-size: 1.5em;
+  color: red;
+  font-weight: bold;
+}
+
+.countdown-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.countdown-container h3 {
+  font-size: 1.2em;
+  color: red;
+  font-weight: bold;
+}
+
+.countdown2 {
+  font-size: 1.2em;
+  color: red;
+  font-weight: bold;
+}
+
+.cookie-banner-container {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.cookie-banner {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-dark-brown);
+  color: var(--color-beige);
+  padding: 6rem 2rem;
+  z-index: 1000;
+}
+
+.cookie-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cookie-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.accept-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cookie-button {
+  /* background-color: #4CAF50; */
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+/* .cookie-button:hover {
+  background-color: #45a049;
+} */
+
+
+.privacy-policy {
+  font-size: 0.8rem;
+  color: var(--color-dark-brown);
+  text-decoration: none;
+}
+
+
 header {
   width: 100vw;
   height: fit-content;
@@ -251,6 +340,13 @@ header {
   flex-direction: column;
   align-items: center;
   padding-top: 4rem;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 header .padding {
@@ -524,6 +620,10 @@ a {
 
 
 @media (min-width: 600px) {
+
+  .cookie-banner {
+    padding: 6rem 8rem;
+  }
 
  nav {
  justify-content: end;

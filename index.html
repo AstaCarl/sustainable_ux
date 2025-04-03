@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="cookie-banner-container" class="cookie-banner-container">
+    <div id="cookie-banner" class="cookie-banner">
+      <div class="cookie-content">
+        <h2>We Value Your Privacy</h2>
+        <p>
+          We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. You can manage your preferences by clicking "Cookie Settings".
+        </p>
+        <div class="cookie-buttons">
+          <button id="cookie-settings" class="cookie-button">Cookie Settings</button>
+          <button id="accept-all" class="accept-button">Accept All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
     <nav class="padding">
       <a href="#farmer-section">For Farmers</a>
       <a href="#consumer-section">For Consumers</a>
@@ -17,9 +32,14 @@
         <img src="./assets/logo.svg" alt="Give soil a voice logo" />
         <div class="header-content">
           <h1>Give Soil a Voice!</h1>
-          <h2>Preserve soil health for future generations</h2>
+          <!-- <h2>Preserve soil health for future generations</h2> -->
         </div>
+        <div class="header-text">
+        <h3>Without your help, our soil will continue to deteriorate!</h3>
+        <h2>Act now! Only a few spots left to make a difference!</h2>
+        <div id="countdown" class="countdown"></div>
         <button aria-label="Join us to support soil health">Join us</button>
+      </div>
       </div>
       <div class="svg-container mobile">
         <img
@@ -37,7 +57,7 @@
     <main>
       <section class="quote-section padding">
         <h2 class="quote">
-          Everything that grows starts with me, but I’m getting weaker.
+          Everything that grows starts with me, but I’m getting weaker. Without immediate action, our soil will become barren, and future generations will suffer.
         </h2>
       </section>
       <img
@@ -85,7 +105,6 @@
         <div class="button-container">
           <button>Learn more</button>
         </div>
-        <p></p>
       </section>
       <div class="svg-container">
         <img
@@ -126,18 +145,15 @@
       <section id="joinus-section" class="cta-section padding">
         <div class="cta-head">
           <h2 class="display">Join the Movement</h2>
-          <h3>
+          <h2>6000 member are already making a difference</h2>
+          <p>
             Sign up to receive updates, resources, and tips on how you can
             contribute to soil health and sustainability
-          </h3>
-          <p>
-            We value your privacy. Your information will be used solely for the
-            purpose of providing you with updates and resources related to soil
-            health and sustainability.
-            <a aria-label="Read our full privacy policy" href="#"
-              >See our full privacy policy</a
-            >
           </p>
+          <div class="countdown-container">
+          <h3>Only a few open spots!</h3>
+          <div id="countdown2" class="countdown2"></div>'
+        </div>'
         </div>
         <form action="">
             <div>
@@ -172,12 +188,21 @@
                 <option value="other">Other</option>
               </select>
             </div>
+            <div>
             <div class="checkbox-container">
-              <input required type="checkbox" name="consent" id="consent" />
+              <input required checked type="checkbox" name="consent" id="consent" />
               <label for="consent"
                 >I agree to receive updates and resources</label
               >
             </div>
+          </div>
+          <p class="privacy-policy">
+            Your information will be used to providing you with updates and resources related to soil
+            health and sustainability.
+            <a aria-label="Read our full privacy policy" href="#"
+              >See our full privacy policy</a
+            >
+          </p>
             <div class="button-container">
               <button aria-label="Submit the form to sign up for updates">Sign Up</button>
             </div>
@@ -218,5 +243,6 @@
         <p>© 2025 The Voice of Soil. All rights reserved.</p>
       </div>
     </footer>
+  <script src="./script.js"></script>
   </body>
 </html>
