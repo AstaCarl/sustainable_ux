@@ -1,251 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The voice of soil</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="padding">
-      <a href="#farmer-section">For Farmers</a>
-      <a href="#consumer-section">For Consumers</a>
-      <a href="#joinus-section">For You</a>
-    </nav>
-    <header>
-      <div class="padding">
-        <img src="./assets/logo.svg" alt="Give soil a voice logo" />
-        <div class="header-content">
-          <h1 class="">Give Soil a Voice!</h1>
-          <h2>Preserve soil health for future generations</h2>
-        </div>
-        <button aria-label="Join us to support soil health">Join us</button>
-      </div>
-      <div class="svg-container mobile">
-        <img
-          src="./assets//hero-mobile.svg"
-          alt="Brown wave background representing soil health."
-        />
-      </div>
-      <div class="svg-container desktop">
-        <img
-          src="./assets//hero-desktop.svg"
-          alt="Brown wave background representing soil health."
-        />
-      </div>
-    </header>
-    <main>
-      <section class="quote-section padding">
-        <h2 class=" display quote">
-          Everything that grows starts with me, but I’m getting weaker.
-        </h2>
-      </section>
-      <img
-      loading="lazy"
-        src="./assets/quote-wave.svg"
-        aria-label="Decorative background illustration"
-        alt=""
-      />
-
-      <section id="farmer-section" class="farmer-section padding">
-        <h2 class="display">Healthy Soil, Healthy Future</h2>
-        <h2>Support Sustainable Farming Practices</h2>
-        <p>
-          Regenerative agriculture is key to restoring my vitality and ensuring sustainable food production. Learn how you can support and implement these practices to nurture the earth. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Deserunt maiores laborum
-          dicta, excepturi possimus voluptate reiciendis incidunt nihil.
-        </p>
-        <div>
-        <h3 class="vspace">Regenerative Practices</h3>
-        <p class="vspace-small"> Discover how these practices improve soil health, increase biodiversity, and combat climate change.</p>
-      </div>
-        <ul>
-          <li>
-            <img
-            loading="lazy"
-              src="./assets//seed.svg"
-              alt="Icon of a seedling representing growth."
-            />
-            Crop rotation
-          </li>
-          <li>
-            <img
-            loading="lazy"
-              src="./assets//seed.svg"
-              alt="Icon of a seedling representing growth."
-            />Cover cropping
-          </li>
-          <li>
-            <img
-            loading="lazy"
-              src="./assets//seed.svg"
-              alt="Icon of a seedling representing growth."
-            />
-            Reduce tillage
-          </li>
-        </ul>
-        <div>
-          <h3 class="vspace">Farmer Succes Stories</h3>
-          <p class="vspace-small">Read about farmers who have successfully adopted regenerative methods and the positive impact on their land.</p>
-        </div>
-        <div class="link-container">
-          <a
-            href="https://www.ecolabelindex.com/ecolabels/"
-            aria-label="Visit the official eco-labels website"
-            >Farmer Stories
-            <img loading="lazy" src="./assets/arrow-right-brown.svg" alt="Arrow pointing right"
-          /></a>
-        </div>
-      </section>
-      <div class="svg-container">
-        <img
-        loading="lazy"
-          src="./assets/choices-start.svg"
-          aria-label="Decorative background illustration"
-          alt=""
-        />
-      </div>
-      <section id="consumer-section" class="consumer-choices padding">
-        <h2 class="display vspace">Choose Responsibly, Shop Sustainably</h2>
-
-        <h2>Understanding and Identifying Sustainable Products</h2>
-        <p>
-          Clear labeling helps you make informed choices that support sustainable agriculture and protect the environment. Lorem
-          ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores
-          laborum dicta.
-          <h3 class="vspace">Understanding Sustainable Labels</h3>
-          <p> Learn what different labels mean and how they contribute to soil health and sustainability.</p>
-        <div class="link-container">
-          <a
-            href="https://www.ecolabelindex.com/ecolabels/"
-            aria-label="Visit the official eco-labels website"
-            >Official Eco-labels
-            <img loading="lazy" src="./assets/arrow-right.svg" alt="Arrow pointing right"
-          /></a>
-        </div>
-      </section>
-      <!-- <section id="consumer-section" class="consumer-choices padding">
-        <h2 class="display">Your choices matter</h2>
-
-        <h3>You as a consumer can help too!</h3>
-        <p>
-          Look for products labeled with sustainable farming methods. Lorem
-          ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores
-          laborum dicta, excepturi possimus voluptate reiciendis incidunt nihil
-          in fugit? Delectus eius, voluptas dignissimos consectetur excepturi
-          dolor nemo hic similique. Non porro ex saepe illum totam aliquam
-          quisquam eveniet debitis?
-        </p>
-        <div class="link-container">
-          <a
-            href="https://www.ecolabelindex.com/ecolabels/"
-            aria-label="Visit the official eco-labels website"
-            >Official Eco-labels
-            <img loading="lazy" src="./assets/arrow-right.svg" alt="Arrow pointing right"
-          /></a>
-        </div>
-      </section> -->
-      <div class="svg-container">
-        <img
-        loading="lazy"
-          src="./assets/choices-end.svg"
-          aria-label="Decorative background illustration"
-        />
-      </div>
-      <section id="joinus-section" class="cta-section padding">
-        <div class="cta-head">
-          <h2 class="display">Join the Movement</h2>
-          <h3>
-            Sign up to receive updates, resources, and tips on how you can
-            contribute to soil health and sustainability
-          </h3>
-          <p>
-            We value your privacy. Your information will be used solely for the
-            purpose of providing you with updates and resources related to soil
-            health and sustainability.
-            <a aria-label="Read our full privacy policy" href="#"
-              >See our full privacy policy</a
-            >
-          </p>
-        </div>
-        <form action="">
-            <div>
-              <label for="name">Full name</label>
-              <input
-                required
-                type="text"
-                name="name"
-                placeholder="John Doe"
-                id="name"
-              />
-            </div>
-            <div>
-              <label for="email">Email address</label>
-              <input
-                required
-                type="email"
-                name="email"
-                placeholder="john@doe.com"
-                id="email"
-              />
-            </div>
-            <div>
-              <label for="role">Select your role</label>
-              <select required name="role" id="role">
-                <option class="default-value" value="default" disabled selected>
-                  Select your role
-                </option>
-                <option value="consumer">Consumer</option>
-                <option value="farmer">Farmer</option>
-                <option value="business_owner">Business owner</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="checkbox-container">
-              <input required type="checkbox" name="consent" id="consent" />
-              <label for="consent"
-                >I agree to receive updates and resources</label
-              >
-            </div>
-            <div class="button-container">
-              <button aria-label="Submit the form to sign up for updates">Sign Up</button>
-            </div>
-        </form>
-      </section>
-      <div class="svg-container">
-        <img
-        loading="lazy"
-          src="./assets/footer.svg"
-          aria-label="Footer decorative illustration"
-          alt=""
-        />
-      </div>
-    </main>
-    <footer
-      class="padding"
-      aria-label="Website footer with contact information and useful links"
-    >
-      <div class="footer-head">
-        <h2>The voice of soil</h2>
-        <img loading="lazy" src="./assets/logo-green.svg" alt="Give soil a voice logo" />
-      </div>
-      <div class="content-wrapper">
-        <div class="footer-content">
-          <h3>Contact us</h3>
-          <p>+ 45 12345678</p>
-          <a href="">john@soilvoice.com</a>
-          <p>Address Street 56, Earth</p>
-        </div>
-        <div class="footer-content">
-          <h3>Useful links</h3>
-          <a href="#farmer-section">For Farmers</a>
-          <a href="#consumer-section">For consumers</a>
-          <a href="#joinus-section">For you</a>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>© 2025 The Voice of Soil. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>The voice of soil</title>
+<link rel=stylesheet href=style.css>
+</head>
+<body>
+<nav class=padding>
+<a href=#farmer-section>For Farmers</a>
+<a href=#consumer-section>For Consumers</a>
+<a href=#joinus-section>For You</a>
+</nav>
+<header>
+<div class=padding>
+<img src=./assets/logo.svg alt="Give soil a voice logo">
+<div class=header-content>
+<h1>Give Soil a Voice!</h1>
+<h2>Preserve soil health for future generations</h2>
+</div>
+<button aria-label="Join us to support soil health">Join us</button>
+</div>
+<div class="svg-container mobile">
+<img src=./assets//hero-mobile.svg alt="Brown wave background representing soil health.">
+</div>
+<div class="svg-container desktop">
+<img src=./assets//hero-desktop.svg alt="Brown wave background representing soil health.">
+</div>
+</header>
+<main>
+<section class="quote-section padding">
+<h2 class="display quote">
+Everything that grows starts with me, but I’m getting weaker.
+</h2>
+</section>
+<img loading=lazy src=./assets/quote-wave.svg aria-label="Decorative background illustration" alt="">
+<section id=farmer-section class="farmer-section padding">
+<h2 class=display>Healthy Soil, Healthy Future</h2>
+<h2>Support Sustainable Farming Practices</h2>
+<p>
+Regenerative agriculture is key to restoring my vitality and ensuring sustainable food production. Learn how you can support and implement these practices to nurture the earth. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores laborum dicta, excepturi possimus voluptate reiciendis incidunt nihil.
+</p>
+<div>
+<h3 class=vspace>Regenerative Practices</h3>
+<p class=vspace-small> Discover how these practices improve soil health, increase biodiversity, and combat climate change.</p>
+</div>
+<ul>
+<li>
+<img loading=lazy src=./assets//seed.svg alt="Icon of a seedling representing growth.">
+Crop rotation
+</li>
+<li>
+<img loading=lazy src=./assets//seed.svg alt="Icon of a seedling representing growth.">Cover cropping
+</li>
+<li>
+<img loading=lazy src=./assets//seed.svg alt="Icon of a seedling representing growth.">
+Reduce tillage
+</li>
+</ul>
+<div>
+<h3 class=vspace>Farmer Succes Stories</h3>
+<p class=vspace-small>Read about farmers who have successfully adopted regenerative methods and the positive impact on their land.</p>
+</div>
+<div class=link-container>
+<a href=https://www.ecolabelindex.com/ecolabels/ aria-label="Visit the official eco-labels website">Farmer Stories
+<img loading=lazy src=./assets/arrow-right-brown.svg alt="Arrow pointing right"></a>
+</div>
+</section>
+<div class=svg-container>
+<img loading=lazy src=./assets/choices-start.svg aria-label="Decorative background illustration" alt="">
+</div>
+<section id=consumer-section class="consumer-choices padding">
+<h2 class="display vspace">Choose Responsibly, Shop Sustainably</h2>
+<h2>Understanding and Identifying Sustainable Products</h2>
+<p>
+Clear labeling helps you make informed choices that support sustainable agriculture and protect the environment. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores laborum dicta.
+</p><h3 class=vspace>Understanding Sustainable Labels</h3>
+<p> Learn what different labels mean and how they contribute to soil health and sustainability.</p>
+<div class=link-container>
+<a href=https://www.ecolabelindex.com/ecolabels/ aria-label="Visit the official eco-labels website">Official Eco-labels
+<img loading=lazy src=./assets/arrow-right.svg alt="Arrow pointing right"></a>
+</div>
+</section>
+<div class=svg-container>
+<img loading=lazy src=./assets/choices-end.svg aria-label="Decorative background illustration">
+</div>
+<section id=joinus-section class="cta-section padding">
+<div class=cta-head>
+<h2 class=display>Join the Movement</h2>
+<h3>
+Sign up to receive updates, resources, and tips on how you can contribute to soil health and sustainability
+</h3>
+<p>
+We value your privacy. Your information will be used solely for the purpose of providing you with updates and resources related to soil health and sustainability.
+<a aria-label="Read our full privacy policy" href=#>See our full privacy policy</a>
+</p>
+</div>
+<form action="">
+<div>
+<label for=name>Full name</label>
+<input required name=name placeholder="John Doe" id=name>
+</div>
+<div>
+<label for=email>Email address</label>
+<input required type=email name=email placeholder=john@doe.com id=email>
+</div>
+<div>
+<label for=role>Select your role</label>
+<select required name=role id=role>
+<option class=default-value value=default disabled selected>
+Select your role
+</option>
+<option value=consumer>Consumer</option>
+<option value=farmer>Farmer</option>
+<option value=business_owner>Business owner</option>
+<option value=other>Other</option>
+</select>
+</div>
+<div class=checkbox-container>
+<input required type=checkbox name=consent id=consent>
+<label for=consent>I agree to receive updates and resources</label>
+</div>
+<div class=button-container>
+<button aria-label="Submit the form to sign up for updates">Sign Up</button>
+</div>
+</form>
+</section>
+<div class=svg-container>
+<img loading=lazy src=./assets/footer.svg aria-label="Footer decorative illustration" alt="">
+</div>
+</main>
+<footer class=padding aria-label="Website footer with contact information and useful links">
+<div class=footer-head>
+<h2>The voice of soil</h2>
+<img loading=lazy src=./assets/logo-green.svg alt="Give soil a voice logo">
+</div>
+<div class=content-wrapper>
+<div class=footer-content>
+<h3>Contact us</h3>
+<p>+ 45 12345678</p>
+<a href="">john@soilvoice.com</a>
+<p>Address Street 56, Earth</p>
+</div>
+<div class=footer-content>
+<h3>Useful links</h3>
+<a href=#farmer-section>For Farmers</a>
+<a href=#consumer-section>For consumers</a>
+<a href=#joinus-section>For you</a>
+</div>
+</div>
+<div class=copyright>
+<p>© 2025 The Voice of Soil. All rights reserved.</p>
+</div>
+</footer>
+</body>
 </html>
