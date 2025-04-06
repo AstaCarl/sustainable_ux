@@ -582,6 +582,10 @@ form {
 }
 
 @media (min-width: 1000px) {
+
+  h1 {
+    font-size: 3rem;
+  }
   .padding {
     padding: 0 10rem;
   }
