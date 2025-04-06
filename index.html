@@ -10,18 +10,46 @@
     <div id="cookie-banner-container" class="cookie-banner-container">
     <div id="cookie-banner" class="cookie-banner">
       <div class="cookie-content">
-        <h2>We Value Your Privacy</h2>
+        <h2>Consent to cookies and data processing</h2>
         <p>
           We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. You can manage your preferences by clicking "Cookie Settings".
         </p>
         <div class="cookie-buttons">
-          <button id="cookie-settings" class="cookie-button">Cookie Settings</button>
-          <button id="accept-all" class="accept-button">Accept All</button>
+          <button id="cookie-settings" class="cookie-button button">Cookie Settings</button>
+          <button id="accept-all" class="accept-button button">Accept All</button>
         </div>
       </div>
     </div>
   </div>
-    
+  <div id="cookie-settings-container" class="cookie-settings-container">
+  <div id="cookie-settings-popup" class="cookie-settings-popup">
+    <div class="cookie-settings-content">
+      <h2>Manage Cookie Preferences</h2>
+      <form id="cookie-settings-form">
+        <label>
+          <input type="checkbox" name="necessary" checked disabled />
+          Necessary Cookies
+        </label>
+        <label>
+          <input type="checkbox" name="preferences" checked />
+          Preferences Cookies
+        </label>
+        <label>
+          <input type="checkbox" name="statistics" checked />
+          Statistics Cookies
+        </label>
+        <label>
+          <input type="checkbox" name="marketing" checked />
+          Marketing Cookies
+        </label>
+        <div class="cookie-buttons">
+          <button type="button" id="save-settings" class="cookie-button button">Save Settings</button>
+          <button type="button" id="cancel-settings" class="button">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
     <nav class="padding">
       <a href="#farmer-section">For Farmers</a>
       <a href="#consumer-section">For Consumers</a>
@@ -38,7 +66,7 @@
         <h3>Without your help, our soil will continue to deteriorate!</h3>
         <h2>Act now! Only a few spots left to make a difference!</h2>
         <div id="countdown" class="countdown"></div>
-        <button aria-label="Join us to support soil health">Join us</button>
+        <a class="button" href="#jounus-section" aria-label="Join us to support soil health">Join us</a>
       </div>
       </div>
       <div class="svg-container mobile">
@@ -204,7 +232,7 @@
             >
           </p>
             <div class="button-container">
-              <button aria-label="Submit the form to sign up for updates">Sign Up</button>
+              <button class="button" aria-label="Submit the form to sign up for updates">Sign Up</button>
             </div>
         </form>
       </section>

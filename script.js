@@ -27,7 +27,6 @@
   }, 1000);
 
 
-
     // Set the date we're counting down to
     var countDownDate = new Date("Apr 10, 2025 23:59:59").getTime();
 
@@ -63,8 +62,18 @@
       });
 
       document.getElementById('cookie-settings').addEventListener('click', function() {
-        // Handle cookie settings logic here
-        alert('Cookie settings functionality to be implemented.');
+        console.log('Settings cancelled');
+        document.getElementById('cookie-banner-container').style.display = 'none';
+        document.getElementById('cookie-settings-container').style.display = 'block';
+      });
+    
+      document.getElementById('cancel-settings').addEventListener('click', function() {
+        document.getElementById('cookie-settings-container').style.display = 'none';
+      });
+    
+      document.getElementById('save-settings').addEventListener('click', function() {
+        // Save settings logic here
+        document.getElementById('cookie-settings-container').style.display = 'none';
       });
 
   
