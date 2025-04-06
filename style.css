@@ -160,6 +160,14 @@ body {
   scroll-behavior: smooth;
 }
 
+.vspace {
+padding-top: 2rem;
+}
+
+.vspace-small {
+  padding-top: 1rem;
+  }
+
 .padding {
   padding: 0 2rem;
 }
@@ -171,19 +179,26 @@ h1 {
   font-family: "Display";
 }
 
+.display {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Display";
+  letter-spacing: 1px;
+}
+
 h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  font-family: "Display";
   gap: 1rem;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 h3 {
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
+  font-family: 'Display';
 }
 
 h3 {
@@ -298,7 +313,8 @@ header svg {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 .svg-container {
@@ -316,10 +332,6 @@ header svg {
   width: 100%;
   height: auto;
   margin: 0;
-}
-
-.display {
-  font-size: 2.5rem;
 }
 
 .consumer-choices {
@@ -351,7 +363,22 @@ header svg {
   text-decoration: none;
 }
 
-.consumer-choices a svg {
+.farmer-section a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-dark-brown);
+  text-underline-offset: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.farmer-section a img {
+  margin-top: 4px;
+}
+
+.consumer-choices a img {
   margin-top: 4px;
 }
 
