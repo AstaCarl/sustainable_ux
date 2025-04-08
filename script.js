@@ -69,6 +69,7 @@
     
       document.getElementById('cancel-settings').addEventListener('click', function() {
         document.getElementById('cookie-settings-container').style.display = 'none';
+        document.getElementById('cookie-banner-container').style.display = 'block';
       });
     
       document.getElementById('save-settings').addEventListener('click', function() {
