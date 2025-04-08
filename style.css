@@ -312,7 +312,7 @@ nav a {
 
 .cookie-banner-container {
   position: fixed;
-  top: 0;
+  top: 5%;
   height: 100vh;
   width: 100vw;
   z-index: 1000;
