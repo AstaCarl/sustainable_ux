@@ -286,8 +286,9 @@ nav a {
 
 .cookie-settings-popup {
   position: fixed;
-  top: 20%;
+  /* top: 20%; */
   left: 0;
+  bottom: 0;
   width: 100%;
   background-color: var(--color-dark-brown);
   color: var(--color-beige);
